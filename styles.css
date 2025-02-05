@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background: url('heart-bg.jpg') no-repeat center center/cover;
+    background: url('assets/heart-bg.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
