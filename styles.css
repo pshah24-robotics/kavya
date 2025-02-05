@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: url('assets/heart-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+h1 {
+    color: #ff4d6d;
+    font-size: 2rem;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#yes-btn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#yes-btn:hover {
+    background-color: #e63950;
+}
+
+#no-btn {
+    background-color: #444;
+    color: white;
+    position: absolute;
+}
+
+#response-text {
+    font-size: 1.5rem;
+    color: #ff4d6d;
+    margin-top: 20px;
+}
+
+/* Confetti Animation */
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
